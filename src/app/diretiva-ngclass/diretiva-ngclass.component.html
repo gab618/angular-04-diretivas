@@ -1,0 +1,15 @@
+<i-bs
+  [class.blue]="!meuFavorito"
+  [class.red]="meuFavorito"
+  (click)="onClick()"
+  name="heart-fill"
+></i-bs>
+
+<i-bs
+  [ngClass]="{
+    blue: !meuFavorito,
+    red: meuFavorito
+  }"
+  (click)="onClick()"
+  name="heart-fill"
+></i-bs>
