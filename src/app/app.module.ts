@@ -11,6 +11,7 @@ import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.componen
 import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.component';
 import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
 import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
+import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-content.component';
 
 const icons = { heart, heartFill };
 @NgModule({
@@ -22,6 +23,7 @@ const icons = { heart, heartFill };
     DiretivaNgclassComponent,
     DiretivaNgstyleComponent,
     OperadorElvisComponent,
+    ExemploNgContentComponent,
   ],
   imports: [BrowserModule, NgxBootstrapIconsModule.forRoot(icons), FormsModule],
   providers: [],
