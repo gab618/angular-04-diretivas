@@ -1,7 +1,14 @@
-<p fundoAmarelo>Texto com fundo amarelo</p>
+<!-- <p fundoAmarelo>Texto com fundo amarelo</p>
 
 <p highlightMouse>Texto com highlight mouseover</p>
 
 <p [highlight]="'navy'" [defaultColor]="'orange'">
   Texto com highlight com cores customizadas
-</p>
+</p> -->
+
+<h3>*ngIf</h3>
+<div *ngIf="mostrarCursos">Lista de cursos aqui</div>
+<div *ngElse="mostrarCursos">Não existem cursos para serem listados</div>
+
+<br />
+<button class="btn btn-primary" (click)="onMostrarCursos()">Go</button>
