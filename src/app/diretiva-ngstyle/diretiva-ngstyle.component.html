@@ -1,0 +1,28 @@
+<h5>Style binding</h5>
+
+<button
+  [style.backgroundColor]="ativo ? 'red' : 'gray'"
+  [style.color]="ativo ? 'white' : 'black'"
+  [style.fontWeight]="ativo ? 'bold' : 'normal'"
+  [style.fontSize]="tamanhoFonte + 'px'"
+  (click)="mudarAtivo()"
+>
+  This battle will get red hot
+</button>
+
+<input type="text" [(ngModel)]="tamanhoFonte" />
+
+<br />
+<h5>ngStyle</h5>
+
+<button
+  [ngStyle]="{
+    backgroundColor: ativo ? 'red' : 'gray',
+    color: ativo ? 'white' : 'black',
+    fontWeight: ativo ? 'bold' : 'normal',
+    fontSize: tamanhoFonte + 'px'
+  }"
+  (click)="mudarAtivo()"
+>
+  This battle will get red hot
+</button>

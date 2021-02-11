@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 import { heart, heartFill } from 'ngx-bootstrap-icons';
 
@@ -8,6 +9,7 @@ import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
 import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
 import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.component';
+import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
 
 const icons = { heart, heartFill };
 @NgModule({
@@ -17,8 +19,9 @@ const icons = { heart, heartFill };
     DiretivaNgswitchComponent,
     DiretivaNgforComponent,
     DiretivaNgclassComponent,
+    DiretivaNgstyleComponent,
   ],
-  imports: [BrowserModule, NgxBootstrapIconsModule.forRoot(icons)],
+  imports: [BrowserModule, NgxBootstrapIconsModule.forRoot(icons), FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
