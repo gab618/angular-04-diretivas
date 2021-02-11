@@ -15,6 +15,7 @@ import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-conte
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
+import { HighlightDirective } from './shared/highlight.directive';
 
 const icons = { heart, heartFill };
 @NgModule({
@@ -30,6 +31,7 @@ const icons = { heart, heartFill };
     FundoAmareloDirective,
     DiretivasCustomizadasComponent,
     HighlightMouseDirective,
+    HighlightDirective,
   ],
   imports: [BrowserModule, NgxBootstrapIconsModule.forRoot(icons), FormsModule],
   providers: [],
